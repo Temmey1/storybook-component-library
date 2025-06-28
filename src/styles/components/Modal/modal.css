@@ -1,0 +1,9 @@
+/* Modal Component */
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+ 
+.modal-content {
+  @apply bg-white rounded-lg shadow-xl;
+  max-height: calc(100vh - 2rem);
+} 

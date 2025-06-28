@@ -1,0 +1,43 @@
+/* Import component styles */
+@import './components/Button/button.css';
+@import './components/Input/input.css';
+@import './components/Card/card.css';
+@import './components/Avatar/avatar.css';
+@import './components/Modal/modal.css';
+@import './components/Toast/toast.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900;
+    font-family: system-ui, -apple-system, sans-serif;
+  }
+
+  /* Ensure body is never hidden from screen readers */
+  body[aria-hidden="true"] {
+    @apply hidden;
+  }
+}
+
+@layer components {
+  .storybook-wrapper {
+    @apply p-12;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .scrollbar-hide {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+} 

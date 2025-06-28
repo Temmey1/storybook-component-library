@@ -1,0 +1,29 @@
+/* Button Component */
+.btn {
+  @apply inline-flex items-center justify-center rounded-md font-medium transition-colors duration-200;
+}
+
+/* Button Sizes */
+.btn.text-sm {
+  @apply px-3 py-1.5;
+}
+
+.btn.text-base {
+  @apply px-4 py-2;
+}
+
+.btn.text-lg {
+  @apply px-6 py-3;
+}
+
+.btn-primary {
+  @apply bg-blue-600 text-white hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:outline-none;
+}
+
+.btn-secondary {
+  @apply bg-gray-100 text-gray-900 hover:bg-gray-200 focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 focus:outline-none;
+}
+
+.btn-outline {
+  @apply border border-gray-300 text-gray-700 hover:bg-gray-50 focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 focus:outline-none;
+} 

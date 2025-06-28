@@ -1,0 +1,56 @@
+/* Card Component */
+.card {
+  @apply bg-white rounded-lg overflow-hidden;
+}
+
+.card-bordered {
+  @apply border border-gray-200;
+}
+
+.card-shadowed {
+  @apply shadow-md;
+}
+
+.card-hoverable {
+  @apply transition-shadow duration-200 hover:shadow-lg;
+}
+
+.card-header {
+  @apply relative;
+}
+
+.card-header-image {
+  @apply relative w-full h-48;
+}
+
+.card-header-image img {
+  @apply w-full h-full object-cover;
+}
+
+.card-header-overlay {
+  @apply absolute inset-0 bg-gradient-to-b from-black/0 to-black/60;
+}
+
+.card-header-content {
+  @apply absolute bottom-0 left-0 right-0 p-6 text-white;
+}
+
+.card-profile-avatar {
+  @apply w-24 h-24 rounded-full border-4 border-white shadow-lg mb-3;
+}
+
+.card-body {
+  @apply p-6;
+}
+
+.card-body-unpadded {
+  @apply p-0;
+}
+
+.card-footer {
+  @apply p-6;
+}
+
+.card-footer-bordered {
+  @apply border-t border-gray-200;
+} 

@@ -1,0 +1,6 @@
+/* Toast Component */
+.toast {
+  @apply rounded-lg shadow-lg;
+  min-width: 20rem;
+  max-width: 32rem;
+} 

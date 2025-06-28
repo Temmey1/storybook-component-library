@@ -1,0 +1,172 @@
+/* Section Component Styles */
+
+/* Base */
+.section {
+  @apply w-full rounded-lg transition-all duration-200 min-w-[320px] max-w-[1200px] mx-auto relative isolate bg-white shadow-sm;
+}
+
+/* Variants */
+.section-default {
+  @apply bg-white shadow-sm;
+}
+
+.section-bordered {
+  @apply border border-gray-200 shadow-sm;
+}
+
+.section-shadowed {
+  @apply shadow-md;
+}
+
+/* Sizes */
+.section-sm {
+  @apply p-4 space-y-3;
+}
+
+.section-md {
+  @apply p-6 space-y-4;
+}
+
+.section-lg {
+  @apply p-8 space-y-6;
+}
+
+/* Background Colors */
+.section-bg-white {
+  @apply bg-white;
+}
+
+.section-bg-gray {
+  @apply bg-gray-50;
+}
+
+.section-bg-transparent {
+  @apply bg-transparent shadow-none;
+}
+
+/* Header */
+.section-header {
+  @apply flex items-center justify-between gap-4 relative z-10 mb-8;
+}
+
+.section-header-with-divider {
+  @apply border-b border-gray-200 pb-4;
+}
+
+.section-header-collapsible {
+  @apply cursor-pointer hover:bg-gray-50/90 rounded-lg transition-colors duration-200 p-2 -m-2;
+}
+
+.section-header-content {
+  @apply flex-grow space-y-1;
+}
+
+.section-header-actions {
+  @apply flex items-center gap-3;
+}
+
+.section-title {
+  @apply text-xl font-semibold leading-tight relative z-10 text-gray-900;
+}
+
+.section-subtitle {
+  @apply text-sm relative z-10 text-gray-700;
+}
+
+/* Content */
+.section-content {
+  @apply transition-all duration-200 space-y-4 relative z-0 min-h-[200px];
+}
+
+.section-content-collapsed {
+  @apply hidden;
+}
+
+/* Footer */
+.section-footer {
+  @apply mt-6 relative z-10;
+}
+
+.section-footer-with-divider {
+  @apply border-t border-gray-200 pt-6 mt-6;
+}
+
+/* States */
+.section-disabled {
+  @apply opacity-50 pointer-events-none;
+}
+
+.section-loading {
+  @apply relative;
+}
+
+.section-loading-indicator {
+  @apply absolute inset-0 flex items-start justify-center bg-white dark:bg-gray-800;
+}
+
+.section-loading-indicator span {
+  @apply text-gray-900 dark:text-gray-50;
+}
+
+/* Collapse Button */
+.section-collapse-button {
+  @apply p-2 rounded-full hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 transition-colors duration-200 relative z-10;
+}
+
+.section-collapse-button svg {
+  @apply text-gray-700;
+}
+
+.section-collapsed .section-collapse-button svg {
+  @apply transform rotate-180;
+}
+
+/* Dark Mode */
+.dark .section {
+  @apply bg-gray-800 shadow-md;
+}
+
+.dark .section-default {
+  @apply bg-gray-800;
+}
+
+.dark .section-bordered {
+  @apply border-gray-700;
+}
+
+.dark .section-title {
+  @apply text-gray-50;
+}
+
+.dark .section-subtitle {
+  @apply text-gray-200;
+}
+
+.dark .section-header-with-divider,
+.dark .section-footer-with-divider {
+  @apply border-gray-700;
+}
+
+.dark .section-header-collapsible:hover {
+  @apply bg-gray-700/50;
+}
+
+.dark .section-collapse-button:hover {
+  @apply bg-gray-700;
+}
+
+.dark .section-bg-white {
+  @apply bg-gray-800;
+}
+
+.dark .section-bg-gray {
+  @apply bg-gray-900;
+}
+
+.dark .section-loading-indicator {
+  @apply text-gray-50;
+}
+
+.dark .section-loading-indicator div {
+  @apply border-gray-600 border-t-blue-400;
+} 

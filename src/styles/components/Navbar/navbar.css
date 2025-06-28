@@ -1,0 +1,349 @@
+.navbar {
+  @apply w-full py-4 px-6 transition-all duration-300;
+}
+
+.navbar-container {
+  @apply container mx-auto flex items-center justify-between;
+}
+
+/* Variant Styles */
+.navbar-light {
+  @apply bg-white border-b border-gray-200;
+}
+
+.navbar-dark {
+  @apply bg-gray-900 text-white;
+}
+
+.navbar-transparent {
+  @apply bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm;
+}
+
+/* Sticky Styles */
+.navbar-sticky {
+  @apply fixed top-0 left-0 right-0 z-50;
+}
+
+.navbar-scrolled {
+  @apply shadow-md;
+}
+
+/* Logo Section */
+.navbar-logo {
+  @apply flex-shrink-0;
+}
+
+/* Navigation Links */
+.navbar-links {
+  @apply hidden md:flex items-center space-x-6;
+}
+
+.navbar-link-wrapper {
+  @apply relative;
+}
+
+.navbar-link {
+  @apply flex items-center text-gray-600 hover:text-gray-900 transition-colors duration-200;
+}
+
+.navbar-light .navbar-link {
+  @apply text-gray-700 hover:text-gray-900;
+}
+
+.navbar-dark .navbar-link {
+  @apply text-gray-200 hover:text-white;
+}
+
+.navbar-transparent .navbar-link {
+  @apply text-gray-800 hover:text-gray-900 dark:text-gray-50 dark:hover:text-white;
+}
+
+.navbar-link-icon {
+  @apply mr-2;
+}
+
+.navbar-link-badge {
+  @apply ml-2 px-2 py-0.5 text-xs font-medium rounded-full;
+}
+
+.badge-primary {
+  @apply bg-blue-100 text-blue-800;
+}
+
+.badge-success {
+  @apply bg-green-100 text-green-800;
+}
+
+.badge-warning {
+  @apply bg-yellow-100 text-yellow-800;
+}
+
+.badge-danger {
+  @apply bg-red-100 text-red-800;
+}
+
+.badge-info {
+  @apply bg-indigo-100 text-indigo-800;
+}
+
+/* Sublinks */
+.navbar-sublinks {
+  @apply absolute top-full left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-2 hidden;
+}
+
+.navbar-link-wrapper:hover .navbar-sublinks {
+  @apply block;
+}
+
+.navbar-sublink {
+  @apply block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors duration-200;
+}
+
+/* Actions Section */
+.navbar-actions {
+  @apply flex items-center space-x-4;
+}
+
+.navbar-action-button {
+  @apply p-2 rounded-full hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-colors duration-200;
+}
+
+.navbar-dark .navbar-action-button {
+  @apply hover:bg-gray-800;
+}
+
+/* Search */
+.navbar-search {
+  @apply relative;
+}
+
+.navbar-search-dropdown {
+  @apply absolute right-0 mt-2 w-80 bg-white rounded-md shadow-lg p-4;
+}
+
+.navbar-search-input {
+  @apply w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500;
+}
+
+.navbar-search-quick-links {
+  @apply mt-4 space-y-2;
+}
+
+.navbar-quick-link {
+  @apply block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md transition-colors duration-200;
+}
+
+/* Notifications */
+.navbar-notifications {
+  @apply relative;
+}
+
+.navbar-notification-badge {
+  @apply absolute -top-1 -right-1 w-5 h-5 bg-red-700 text-white text-xs font-medium flex items-center justify-center rounded-full;
+}
+
+.navbar-notifications-dropdown {
+  @apply absolute right-0 mt-2 w-96 bg-white rounded-md shadow-lg overflow-hidden;
+}
+
+.navbar-notifications-header {
+  @apply flex items-center justify-between px-4 py-3 border-b border-gray-200;
+}
+
+.navbar-notifications-list {
+  @apply overflow-y-auto;
+}
+
+.navbar-notification-item {
+  @apply flex items-start p-4 hover:bg-gray-50 cursor-pointer border-b border-gray-200 transition-colors duration-200;
+}
+
+.navbar-notification-item.is-unread {
+  @apply bg-blue-50;
+}
+
+.notification-icon {
+  @apply w-8 h-8 rounded-full flex-shrink-0 mr-4;
+}
+
+.notification-icon.info {
+  @apply bg-blue-100;
+}
+
+.notification-icon.success {
+  @apply bg-green-100;
+}
+
+.notification-icon.warning {
+  @apply bg-yellow-100;
+}
+
+.notification-icon.error {
+  @apply bg-red-100;
+}
+
+.notification-content {
+  @apply flex-1;
+}
+
+.notification-content h4 {
+  @apply text-sm font-medium text-gray-900;
+}
+
+.notification-content p {
+  @apply text-sm text-gray-500 mt-1;
+}
+
+.notification-time {
+  @apply text-xs text-gray-400 block mt-1;
+}
+
+.notification-action {
+  @apply text-sm text-indigo-600 hover:text-indigo-500 font-medium;
+}
+
+/* Language Selector */
+.navbar-language {
+  @apply relative;
+}
+
+.navbar-language button {
+  @apply flex items-center space-x-2 px-3 py-2 rounded-md text-gray-100 bg-gray-700 hover:bg-gray-600 dark:text-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700 transition-colors duration-200;
+}
+
+.navbar-language-dropdown {
+  @apply absolute right-0 mt-2 w-48 bg-white dark:bg-gray-800 rounded-md shadow-lg py-2;
+}
+
+.language-option {
+  @apply flex items-center w-full px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200;
+}
+
+.language-option.is-active {
+  @apply bg-gray-100;
+}
+
+.language-flag {
+  @apply w-4 h-4 rounded-sm mr-2;
+}
+
+/* Profile Section */
+.navbar-profile {
+  @apply relative;
+}
+
+.navbar-profile-trigger {
+  @apply flex items-center space-x-3 cursor-pointer;
+}
+
+.navbar-profile-info {
+  @apply hidden md:block;
+}
+
+.navbar-profile-name {
+  @apply block text-sm font-medium text-gray-900 dark:text-gray-100;
+}
+
+.navbar-profile-role {
+  @apply block text-xs text-gray-600 dark:text-gray-300;
+}
+
+.navbar-profile-dropdown {
+  @apply absolute right-0 mt-2 w-64 bg-white rounded-md shadow-lg overflow-hidden;
+}
+
+.profile-header {
+  @apply p-4 border-b border-gray-200 flex items-center space-x-4;
+}
+
+.profile-header h4 {
+  @apply text-sm font-medium text-gray-900;
+}
+
+.profile-header p {
+  @apply text-sm text-gray-500;
+}
+
+.profile-actions {
+  @apply p-2;
+}
+
+.profile-action-button {
+  @apply flex items-center w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors duration-200 rounded-md;
+}
+
+.action-icon {
+  @apply mr-2;
+}
+
+/* Mobile Menu */
+.navbar-mobile-toggle {
+  @apply md:hidden p-2 rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500;
+}
+
+.navbar-mobile-toggle-icon {
+  @apply block w-6 h-0.5 bg-gray-600 relative;
+}
+
+.navbar-mobile-toggle-icon::before,
+.navbar-mobile-toggle-icon::after {
+  @apply content-[''] absolute w-6 h-0.5 bg-gray-600 transition-all duration-200;
+}
+
+.navbar-mobile-toggle-icon::before {
+  @apply -translate-y-2;
+}
+
+.navbar-mobile-toggle-icon::after {
+  @apply translate-y-2;
+}
+
+.navbar-open .navbar-mobile-toggle-icon {
+  @apply bg-transparent;
+}
+
+.navbar-open .navbar-mobile-toggle-icon::before {
+  @apply translate-y-0 rotate-45;
+}
+
+.navbar-open .navbar-mobile-toggle-icon::after {
+  @apply translate-y-0 -rotate-45;
+}
+
+/* Mobile Menu Open State */
+@media (max-width: 768px) {
+  .navbar-links {
+    @apply absolute top-full left-0 right-0 bg-white border-b border-gray-200 py-4 px-6 hidden;
+  }
+
+  .navbar-links.is-open {
+    @apply block;
+  }
+
+  .navbar-link {
+    @apply block py-2;
+  }
+
+  .navbar-sublinks {
+    @apply static w-full mt-0 shadow-none py-0;
+  }
+
+  .navbar-sublink {
+    @apply pl-8;
+  }
+
+  .navbar-actions {
+    @apply flex-col items-stretch space-y-2 space-x-0 mt-4;
+  }
+
+  .navbar-search-dropdown,
+  .navbar-notifications-dropdown,
+  .navbar-language-dropdown,
+  .navbar-profile-dropdown {
+    @apply w-full;
+  }
+}
+
+.navbar-transparent.navbar-scrolled {
+  @apply bg-white/95 dark:bg-gray-900/95 shadow-sm;
+} 
